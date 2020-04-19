@@ -1,15 +1,11 @@
 <template>
-  <el-container class="entry">
-    <el-header class="entry-header">
-      <el-container>
-        <el-main><div class="entry-title">{{title}}</div></el-main>
-        <el-aside><div class="entry-date">{{date}}</div></el-aside>
-      </el-container>
-    </el-header>
-    <el-main>
-      <div v-html="content_parsed" class="entry-content"/>
-    </el-main>
-  </el-container>
+  <el-card class="entry">
+    <div slot="header">
+      <span class="entry-title">{{title}}</span>
+      <span class="entry-date">{{date}}</span>
+    </div>
+    <div v-html="content_parsed" class="entry-content"/>
+  </el-card>
 </template>
 
 <script>
@@ -22,8 +18,8 @@ export default {
   ],
   data () {
     return {
-      'title': 'テスト項目',
-      'date': '2020/1/1',
+      'title': '',
+      'date': '',
       'content': ''
     }
   },
@@ -37,7 +33,7 @@ export default {
   },
   computed: {
     content_parsed: function () {
-      return marked(this.content, {sanitize: true})
+      return marked(this.content)
     }
   },
   methods: {
@@ -74,7 +70,7 @@ export default {
 }
 
 .entry-date {
-  text-align: right;
+  float: right;
   color: #999;
 }
 

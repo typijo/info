@@ -7,7 +7,7 @@
       <el-main>
         <router-view/>
       </el-main>
-      <el-footer>
+      <el-footer id="footer">
         (c) 2020 typijo
       </el-footer>
     </el-container>
@@ -30,9 +30,12 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   height: 100%;
+}
+
+#footer {
+  text-align: center;
 }
 
 html {

@@ -14,7 +14,7 @@
 この文の並列構造を可視化すると次の図のようになります。
 
 <div align="center">
-<img src="/static/imgs/coord.png" alt="法令文の並列構造" width="40%">
+<img src="/info/static/imgs/coord.png" alt="法令文の並列構造" width="40%">
 </div>
 
 並列構造解析は、このような可視化、ひいては法令文の理解に必要な技術です。
@@ -32,4 +32,4 @@
 - 並列構造の語句の前後には共通の単語が来やすい
 
 ### 論文
-[Takahiro Yamakoshi et al. Hierarchical Coordinate Structure Analysis for Japanese Statutory Sentences Using Neural Language Models. Journal of Natural Language Processing Vol. 25, No. 4, 2018](/static/papers/nlp2017.pdf)
+[Takahiro Yamakoshi et al. Hierarchical Coordinate Structure Analysis for Japanese Statutory Sentences Using Neural Language Models. Journal of Natural Language Processing Vol. 25, No. 4, 2018](/info/static/papers/nlp2017.pdf)

@@ -46,9 +46,9 @@
 
 ### Publications
 ランダムフォレストによるアプローチ
-- [Japanese Legal Term Correction using Random Forests. JURIX 2018 (best paper)](/static/papers/jurix2018.pdf)
-- [Thai Legal Term Correction using Random Forests with Outside-the-sentence Features. PACLIC 2019](/static/papers/paclic2019.pdf)
-- [ランダムフォレストを用いた法令用語の校正．人工知能学会論文誌35巻1号H，2020](/static/papers/jsai2019.pdf)
+- [Japanese Legal Term Correction using Random Forests. JURIX 2018 (best paper)](/info/static/papers/jurix2018.pdf)
+- [Thai Legal Term Correction using Random Forests with Outside-the-sentence Features. PACLIC 2019](/info/static/papers/paclic2019.pdf)
+- [ランダムフォレストを用いた法令用語の校正．人工知能学会論文誌35巻1号H，2020](/info/static/papers/jsai2019.pdf)
 
 BERT分類器によるアプローチ
-- [Japanese Mistakable Legal Term Correction using Infrequency-aware BERT Classifier](/static/papers/legalai2019.pdf)
+- [Japanese Mistakable Legal Term Correction using Infrequency-aware BERT Classifier](/info/static/papers/legalai2019.pdf)

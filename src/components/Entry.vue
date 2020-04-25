@@ -1,10 +1,14 @@
 <template>
   <el-card class="entry">
-    <div slot="header">
+    <div slot="header" @click="active">
+      <span v-if="isActive"><i class="el-icon-caret-top" /></span>
+      <span v-else><i class="el-icon-caret-bottom" /></span>
       <span class="entry-title">{{title}}</span>
       <span class="entry-date">{{date}}</span>
     </div>
-    <div v-html="content_parsed" class="entry-content"/>
+    <transition name="fade">
+      <div v-if="isActive" v-html="content_parsed" class="entry-content"/>
+    </transition>
   </el-card>
 </template>
 
@@ -20,7 +24,8 @@ export default {
     return {
       'title': '',
       'date': '',
-      'content': ''
+      'content': '',
+      'isActive': false
     }
   },
   mounted () {
@@ -47,6 +52,9 @@ export default {
           vuethis.content = sents.slice(3).join('\n')
         })
         .catch((err) => { console.log(err) })
+    },
+    active: function () {
+      this.isActive = !this.isActive
     }
   }
 }

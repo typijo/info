@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>This is YAMAKOSHI Takahiro's page.</h1>
-    まだ未熟な名大院生です。福井高専から名大に編入しました。
+    未熟な名大院生です。福井高専から名大に編入しました。
     <section>
       <h3>Skills and Experiences</h3>
       <ul>

@@ -14,7 +14,7 @@
 この文の並列構造を可視化すると次の図のようになります。
 
 <div align="center">
-<img src="/info/static/imgs/coord.png" alt="法令文の並列構造" width="40%">
+<img src="./static/imgs/coord.png" alt="法令文の並列構造" width="40%">
 </div>
 
 並列構造解析は、このような可視化、ひいては法令文の理解に必要な技術です。

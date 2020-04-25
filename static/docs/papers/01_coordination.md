@@ -32,4 +32,4 @@
 - 並列構造の語句の前後には共通の単語が来やすい
 
 ### 論文
-[Takahiro Yamakoshi et al. Hierarchical Coordinate Structure Analysis for Japanese Statutory Sentences Using Neural Language Models. Journal of Natural Language Processing Vol. 25, No. 4, 2018](/info/static/papers/nlp2017.pdf)
+[Takahiro Yamakoshi et al. Hierarchical Coordinate Structure Analysis for Japanese Statutory Sentences Using Neural Language Models. Journal of Natural Language Processing Vol. 25, No. 4, 2018](./static/papers/nlp2017.pdf)

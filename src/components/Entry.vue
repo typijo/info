@@ -6,7 +6,7 @@
       <span class="entry-title">{{title}}</span>
       <span class="entry-date">{{date}}</span>
     </div>
-    <transition name="fade">
+    <transition name="tr_appear">
       <div v-if="isActive" v-html="content_parsed" class="entry-content"/>
     </transition>
   </el-card>

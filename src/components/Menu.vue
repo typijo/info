@@ -5,15 +5,15 @@
         index="about" :route="{ name: 'about' }">About</el-menu-item>
       <el-menu-item
         index="papers" :route="{
-          name: 'articles', params: { category: 'papers' }
+          name: 'papers'
         }">Papers</el-menu-item>
       <el-menu-item
         index="projects" :route="{
-          name: 'articles', params: { category: 'projects' }
+          name: 'projects'
         }">Projects</el-menu-item>
       <el-menu-item
         index="stuffs" :route="{
-          name: 'articles', params: { category: 'stuffs' }
+          name: 'stuffs'
         }">Stuffs</el-menu-item>
     </el-menu>
   </div>

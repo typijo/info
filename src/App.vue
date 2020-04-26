@@ -5,7 +5,9 @@
         <Menu />
       </el-header>
       <el-main>
-        <router-view/>
+        <transition name="tr_appear" mode="out-in">
+          <router-view/>
+        </transition>
       </el-main>
       <el-footer id="footer">
         (c) 2020 typijo
@@ -49,5 +51,29 @@ body {
 
 h2 {
   text-align: left;
+}
+
+.tr_appear-enter {
+  opacity: 0;
+}
+
+.tr_appear-enter-to {
+  opacity: 1;
+}
+
+.tr_appear-enter-active {
+  transition: all 500ms;
+}
+
+.tr_appear-leave {
+  opacity: 1;
+}
+
+.tr_appear-leave-to {
+  opacity: 0;
+}
+
+.tr_appear-leave-active {
+  transition: all 200ms;
 }
 </style>

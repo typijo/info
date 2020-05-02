@@ -10,7 +10,7 @@
         </transition>
       </el-main>
       <el-footer id="footer">
-        (c) 2020 typijo
+        (c) 2020 typijo&nbsp;&nbsp;&nbsp;&nbsp;Contact: @typijo（twitter）&nbsp;&nbsp;t.yama.pijotts★gmail.com（★は…）
       </el-footer>
     </el-container>
   </div>

@@ -13,7 +13,10 @@ function traverse_dir(dirpath, relpath="") {
             fnames = fnames.concat(
                 traverse_dir(dirpath_child, relpath_child));
         } else if (name.endsWith(".md")) { 
-            fnames.push(path.join(relpath,  name));
+            fnames.push({
+                path: path.join(relpath,  name),
+                name: name.split(".md")[0]
+            });
         }
     }
 

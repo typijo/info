@@ -1,5 +1,5 @@
 <template>
-  <el-card class="entry">
+  <el-card class="entry" :id="hash">
     <div slot="header" @click="active">
       <span v-if="isActive"><i class="el-icon-caret-top" /></span>
       <span v-else><i class="el-icon-caret-bottom" /></span>
@@ -18,7 +18,7 @@ import axios from 'axios'
 
 export default {
   props: [
-    'src'
+    'src', 'isOpened', 'hash'
   ],
   data () {
     return {
@@ -30,6 +30,9 @@ export default {
   },
   mounted () {
     this.src && this.load(this.src)
+    if (this.isOpened) {
+      this.isActive = true
+    }
   },
   watch: {
     src (path) {

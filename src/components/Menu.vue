@@ -28,6 +28,11 @@ export default {
   },
   mounted () {
     this.activeIndex = this.$route.name
+  },
+  watch: {
+    '$route': function (to, from) {
+      this.activeIndex = to.name
+    }
   }
 }
 </script>

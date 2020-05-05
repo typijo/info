@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>This is YAMAKOSHI Takahiro's page.</h1>
-    未熟な名大院生です。福井高専から名大に編入しました。
+    未熟な名大院生です。福井高専から名大に編入しました。弁護士事務所と協同し契約書レビューサービス<router-link :to="{name: 'projects', hash: '#_02_legalai'}">LegalAI</router-link>の開発に携わっています。
     <section>
       <h3>Programming Languages</h3>
       <Cards :targets="proglangs" :cols="cols" v-bind:id="proglangs"/>
@@ -55,12 +55,12 @@ export default {
         {
           img: require('@/assets/cpp.svg'),
           alt: 'C++',
-          desc: 'かつて競プロで使っていました。また研究でも使っていました。'
+          desc: 'かつて競プロで使っていました。また<a href="#/papers#_01_coordination">並列構造解析</a>の研究でも使っていました。'
         },
         {
           img: require('@/assets/java.svg'),
           alt: 'Java',
-          desc: '高専時代アプリを開発していました'
+          desc: '高専時代アプリ開発に使用していました'
         }
       ],
       libraries: [
@@ -77,7 +77,7 @@ export default {
         {
           img: require('@/assets/chainer.svg'),
           alt: 'Chainer',
-          desc: '以前の研究で使っていました。'
+          desc: '<a href="#/papers#_01_coordination">並列構造解析</a>の研究で使っていました。'
         },
         {
           img: require('@/assets/keras.svg'),
@@ -89,27 +89,27 @@ export default {
         {
           img: require('@/assets/node.svg'),
           alt: 'Node',
-          desc: 'LegalAIプロジェクトのサーバサイド開発で使用しています。'
+          desc: '<a href="#/projects/#_02_legalai">LegalAI</a>のサーバサイドで使用しています。'
         },
         {
           img: require('@/assets/aws.svg'),
           alt: 'Amazon Web Services',
-          desc: 'LegalAIのインフラで使用しています。'
+          desc: '<a href="#/projects/#_02_legalai">LegalAI</a>のインフラで使用しています。'
         },
         {
           img: require('@/assets/gcp.svg'),
           alt: 'Google Cloud Platform',
-          desc: 'LegalAIの一部機能等で使用しています。'
+          desc: '<a href="#/projects/#_02_legalai">LegalAI</a>の一部機能で使用しています。'
         },
         {
           img: require('@/assets/react.svg'),
           alt: 'React',
-          desc: 'ReactJS、LegalAIのフロントで使用、動作理解のために勉強しています。'
+          desc: 'ReactJS：<a href="#/projects/#_02_legalai">LegalAI</a>のフロントで使用、動作理解のために勉強しています。'
         },
         {
           img: require('@/assets/logo.png'),
           alt: 'Vue.js',
-          desc: 'Vue.js、ReactJSと関連して勉強しています。このサイトもVueで作っています。'
+          desc: 'Vue.js：ReactJSと関連して勉強しています。このサイトもVueで作っています。'
         },
         {
           img: require('@/assets/android.svg'),
@@ -127,6 +127,11 @@ export default {
           img: require('@/assets/langs.png'),
           alt: '自然言語学習',
           desc: '言語学習：Duolingoでいろいろな言語を学んでいますが、会話力はお察し'
+        },
+        {
+          img: require('@/assets/car.png'),
+          alt: 'ドライブ',
+          desc: 'ドライブ：趣味と実益を兼ねて軽MTを乗り回しています'
         }
       ]
     }

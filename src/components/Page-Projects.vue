@@ -3,7 +3,9 @@
     <h1>プロジェクト</h1>
     <div v-if="this.posts && this.posts.length > 0">
       <Entry
-        v-for="post in this.posts" v-bind:key="post" :src="post"/>
+        v-for="post in this.posts" v-bind:key="post.name"
+        :src="post.path" :hash="post.name"
+        :isOpened="opened === '#' + post.name"/>
     </div>
     <div v-else>
       <span class="noentry" v-if="this.posts">No article.</span>
@@ -24,10 +26,21 @@ export default {
   },
   mounted () {
     loadDocs(this, cat)
+
+    var hash = this.$route.hash
+    if (hash) {
+      this.opened = hash
+      setTimeout(() => {
+        this.$scrollTo(hash)
+      }, 1000)
+    } else {
+      this.opened = undefined
+    }
   },
   data () {
     return {
-      posts: undefined
+      posts: undefined,
+      opened: undefined
     }
   }
 }

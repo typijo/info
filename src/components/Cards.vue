@@ -4,14 +4,14 @@
       :span="Math.floor(20 / cols)"
       v-for="(o, idx) in targets.length" :key="o" :offset="idx % cols == 0 ? 2 : 0">
       <el-card
-        :body-style="{ padding: '0px' }" class="card">
+        :body-style="{ padding: '5px' }" class="card">
         <div class="imageframe">
           <img
             :src="targets[idx].img"
             class="image" :alt="targets[idx].alt">
         </div>
         <div style="padding: 7px;">
-          <span>{{targets[idx].desc}}</span>
+          <span v-html="targets[idx].desc"></span>
         </div>
       </el-card>
     </el-col>
@@ -28,7 +28,7 @@ export default {
 
 <style>
 .image {
-  max-width: 200px;
+  max-width: 190px;
   max-height: 150px;
   position: absolute;
   top: 50%;

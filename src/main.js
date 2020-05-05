@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import Element from 'element-ui'
+import VueScrollto from 'vue-scrollto'
 import locale from 'element-ui/lib/locale/lang/ja'
 import 'element-ui/lib/theme-chalk/index.css'
 
@@ -9,6 +10,7 @@ import App from './App'
 import router from './router'
 
 Vue.use(Element, {locale})
+Vue.use(VueScrollto, {offset: -80})
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

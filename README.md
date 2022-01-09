@@ -1,6 +1,6 @@
-# spa-test
+# github page
 
-> A Vue.js project
+> A Vue.js project for github pages
 
 ## Build Setup
 
